@@ -1,0 +1,47 @@
+<div class="pdf-ai-wrapper">
+
+    <!-- Sidebar -->
+    <div class="pdf-sidebar">
+        <h4 class="mb-3">Documents</h4>
+
+        <!-- Upload Zone -->
+        <div class="upload-zone" id="drop-zone">
+            <input type="file" id="pdf-files" multiple accept=".pdf" style="display:none;">
+            <div class="upload-content">
+                <i class="fa fa-cloud-upload fa-2x"></i>
+                <p>Click to Upload PDFs</p>
+            </div>
+        </div>
+
+        <button id="btn-upload" class="btn btn-primary btn-block mt-3">
+            Upload Documents
+        </button>
+
+        <div id="upload-status" class="upload-status"></div>
+
+        <!-- Selected Files (Before Upload) -->
+        <div id="selected-files" class="file-list"></div>
+        <!-- Uploaded Files (Hidden Initially) -->
+        <div id="uploaded-container" style="display:none;">
+            <div class="uploaded-title mt-3">Uploaded Documents</div>
+            <div id="uploaded-files" class="file-list"></div>
+        </div>
+    </div>
+
+    <!-- Chat Area -->
+    <div class="chat-main">
+        <div id="chat-output" class="chat-messages">
+            <div class="chat-msg ai">
+                Upload PDFs to start chatting.
+            </div>
+        </div>
+
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Ask something about the documents...">
+            <button id="btn-query">
+                <i class="fa fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+</div>

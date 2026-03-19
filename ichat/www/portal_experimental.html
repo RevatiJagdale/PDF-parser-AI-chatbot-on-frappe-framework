@@ -1,0 +1,23 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<div class="main-content-card mt-4">
+    {% if not doctype %}
+        <div class="welcome-section text-center py-5">
+            <p class="text-muted">Select a module from the menu to get started.</p>
+        </div>
+    {% else %}
+        {% if introduction %}
+            <p class="introduction-text">{{ introduction }}</p>
+        {% endif %}
+        
+        <div class="erp-list-container">
+            {% include list_template %}
+        </div>
+
+        {% if list_footer %}
+            <div class="mt-4">{{ list_footer }}</div>
+        {% endif %}
+    {% endif %}
+</div>
+{% endblock %}

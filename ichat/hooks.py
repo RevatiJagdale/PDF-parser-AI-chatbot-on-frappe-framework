@@ -5,21 +5,20 @@ app_description = "ichat chat interface to query erp data in natural language"
 app_email = "revatij@ithena.ai"
 app_license = "mit"
 
-# Apps
-# ------------------
+
 
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "ichat",
-# 		"logo": "/assets/ichat/logo.png",
-# 		"title": "ichat",
-# 		"route": "/ichat",
-# 		"has_permission": "ichat.api.permission.has_app_permission"
-# 	}
-# ]
+#add_to_apps_screen = [
+ #	{
+#		"name": "ichat",
+	#	"logo": "/assets/ichat/logo.png",
+#		"title": "ichat",
+	#	"route": "/portal",
+ 	#	"has_permission": "ichat.api.permission.has_app_permission"
+ #	}
+#]
 
 # Includes in <head>
 # ------------------
