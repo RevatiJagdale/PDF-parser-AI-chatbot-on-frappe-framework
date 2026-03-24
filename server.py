@@ -54,10 +54,10 @@ Settings.embed_model = HuggingFaceEmbedding(
 # INTERNAL LLM CLIENT
 # ============================================================
 
-INTERNAL_API_KEY = "a7f3c92e1b4d6f8a2c5e7b9d1f3a5c7e9b2d4f6a8c1e3b5d7f9a2c4e6b8d1f3"
+INTERNAL_API_KEY = "your internal api key"
 
 llm_client = RawOpenAI(
-    base_url="https://llm.ithena.app/v1",
+    base_url="llm endpoint",
     api_key=INTERNAL_API_KEY,
     default_headers={
         "X-API-Key": INTERNAL_API_KEY
